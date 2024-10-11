@@ -121,7 +121,7 @@ a:hover {
 }
 
 
-footer {
+/*footer {
     margin-top: 8px;
     border-top: 1px solid #444;
     padding: 10px;
@@ -133,7 +133,7 @@ footer {
     left: 50%;
     width: 100%;
     margin-block-end: -50px;
-}
+}*/
 
 p{
     color:white;
@@ -155,7 +155,7 @@ h5 {
     padding-bottom: 120px;
     margin: 0;
 }
-/*footer{
+footer{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -163,4 +163,4 @@ h5 {
     color: white;
     text-align: center;
     padding: 1rem;
-}*/
+}
