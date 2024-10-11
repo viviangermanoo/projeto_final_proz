@@ -82,8 +82,16 @@ img {
     text-align: left;
     margin-right: auto;
     margin-left: auto;
-
-    
+   
 }
+footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
 
 
