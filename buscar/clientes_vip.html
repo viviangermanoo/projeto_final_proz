@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="serviços, profissionais, busca">
+    <meta name="description" content="Projeto curso Proz">
+    <meta name="author" content="Kelly Renata">
+    <title> VIRTUAL</title>
+    <link rel="stylesheet" type="text/css " href="../css/style_clientes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="filtro.js"></script>
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <div id="header"></div>
+                <script>
+                    fetch('cabecalho.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                        });
+                </script>
+               
+            </header>
+            <main>            
+                <h1 class="titulo__clientes">Nossos Clientes</h1>
+                <section class="conteudo__clientes">
+                    <a href="">
+                        <img class="imagem" src="../img/img_clientes/lv_consultoria.png" >
+                        <h2 class="texto__imagem">LV Consultoria de Impacto Social</h2>
+                        <p class="texto__link">ver mais</p>
+                    </a>
+                    <a href="">
+                        <img class="imagem" src="../img/img_clientes/moretti_eng.png" >
+                        <h2 class="texto__imagem">Moretti Engenharia e Construção</h2>
+                        <p class="texto__link">ver mais</p>
+                    </a>
+                </section>
+            </main>
+            <footer>
+                <div id="footer"></div>
+                <script>
+                    fetch('footer.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('footer').innerHTML = data;
+                        });
+                </script> 
+                      
+        </footer>
+        </div>
+            
+</body>
+</html>
+    

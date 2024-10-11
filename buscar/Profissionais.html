@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="serviços, profissionais, busca">
+    <meta name="description" content="Projeto curso Proz">
+    <meta name="author" content="Kelly Renata">
+    <title> VIRTUAL</title>
+    <link rel="stylesheet" type="text/css " href="../css/Style_profissionais.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="filtro.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            display: none; /* Inicialmente oculta a tabela */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <div id="header"></div>
+                <script>
+                    fetch('cabecalho.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                        });
+                </script>
+               
+            </header>
+           <div class="search-bar"> 
+                <input type="text" id="searchInput"  placeholder="Digite a categoria do Profissional desejado...">
+                <button>Buscar</button>
+           </div> 
+
+       <!-- </header>-->
+        <div class="galeria">
+            <img src="./imagens/pilates.png" alt="Imagem 1">
+            <img src="./imagens/shampoo.png" alt="Imagem 2">
+            <img src="./imagens/consultation.png" alt="Imagem 3">
+            <img src="./imagens/tool-box.png" alt="Imagem 4">
+            <img src="./imagens/plumber-35611_640.png" alt="imagem 10">
+            <img src="./imagens/woman-8686907_640.png" alt="imagem 11">
+            <img src="./imagens/businessman-607788_640.png" alt="imagem 12">
+            <img src="./imagens/building-4380054_640.png" alt="imagem 13">
+        </div>
+
+        <div class="carrossel_container">
+            <div class="titulo-carousel">
+                <p id="frase1"><i>Mais de 500 tipos de serviços em um só lugar.</i></p>
+                <p id="frase2">Qualidade , confiança e melhor preço.</p>
+                <p id="frase3">Só aqui tem!</p>
+            </div>
+      
+            <div class="carousel">
+                <div class="carousel-images" id="carouselImages">
+                    <img src="./imagens_carrossel/ai-generated-8588246_640.jpg" title="Instituto de Enfermagem Ltda">
+                    <img src="./imagens_carrossel/architect-1080589_640.jpg" title="Arquitetura Futura Ltda">
+                    <img src="./imagens_carrossel/camera-7726802_640.jpg" title="Foto Studio Ltda">
+                    <img src="./imagens_carrossel/man-597178_640.jpg" title="Mentoria & Sucesso Ltda">
+                    <img src="./imagens_carrossel/employees-885338_640.jpg" title="Consultoria Malta Ltda">
+                    <img src="./imagens_carrossel/girl-1531575_640.jpg" title="Limpeza & Organização Ltda">
+                    <img src="./imagens_carrossel/babysitting-7422132_640.jpg" title="Baba Perfeita Ltda">
+                    <img src="./imagens_carrossel/doctor-5710152_640.jpg" title="Medico Amigo Ltda">
+                    <img src="./imagens_carrossel/books-5562065_640.jpg" title="Mentoria Ltda">
+
+                </div>
+
+                <div class="carousel-buttons">
+                    <button onclick="prevSlide()">❮</button>
+                    <button onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+        </div>
+   <!-- <h2>Busca em Tabela</h2>-->
+    <!--<input type="text" id="searchInput" placeholder="Digite para buscar...">-->
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>CATEGORIA</th>
+                <th>EMPRESA</th>
+                <th>LOCALIZAÇÃO</th>
+                <th>REGIÃO</th>
+                <th>AVALIAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Consultoria</td>
+                <td>LV Consultoria de Impacto Social</td>
+                <td>Belo Horizonte</td>
+                <td>Sudeste</td>
+                <td>Excelente</td>
+            </tr>
+            <tr>
+                <td>Consultoria</td>
+                <td>KIIL Soluções Contabeis</td>
+                <td>Sabará</td>
+                <td>Sudeste</td>
+                <td>Bom</td>
+            </tr>
+            <tr>
+                <td>Engenharia</td>
+                <td>Moretti Engenharia e Construções</td>
+                <td>Belo Horizonte</td>
+                <td>Nordeste</td>
+                <td>Bom</td>
+            </tr>
+            <tr>
+                <td>Salão de Beleza</td>
+                <td>Socila</td>
+                <td>Betim</td>
+                <td>Leste</td>
+                <td>Excelente</td>
+            </tr>
+            <tr>
+                <td>Salão de Beleza</td>
+                <td>Beleza Rara</td>
+                <td>Santa Luzia</td>
+                <td>Norte</td>
+                <td>Bom</td>
+            </tr>
+            <tr>
+                <td>Salão de Beleza</td>
+                <td>Instituto da Beleza</td>
+                <td>Belo Horizonte</td>
+                <td>Norte</td>
+                <td>Ruim</td>
+            </tr>
+            <tr>
+                <td>Pilates</td>
+                <td>Corpo&Mente</td>
+                <td>Belo Horizonte</td>
+                <td>Sudeste</td>
+                <td>Excelente</td>
+            </tr>
+            <tr>
+                <td>Pilates</td>
+                <td>Movimento do Corpo</td>
+                <td>Oeste</td>
+                <td>Belo Horizonte</td>
+                <td>Bom</td>
+            </tr>
+            <tr>
+                <td>Pilates</td>
+                <td>Saúde&Vida</td>
+                <td>Belo Horizonte</td>
+                <td>Sudeste</td>
+                <td>Ruim</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            var input = document.getElementById('searchInput');
+            var filter = input.value.toLowerCase();
+            var table = document.getElementById('myTable');
+            var tr = table.getElementsByTagName('tr');
+            var found = false ;
+
+            for (var i = 1; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName('td');
+                var match = false ;
+                for (var j = 0; j < td.length; j++) {
+                    if (td[j]) {
+                        if (td[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                tr[i].style.display = match ? '' : 'none';
+                if (match) found = true;
+            }
+
+            // Mostra a tabela se houver correspondências
+            table.style.display = found ? 'table' : 'none';
+             // Oculta a tabela se o campo de busca estiver vazio
+            if (input.value.trim() === '') {
+                 table.style.display = 'none';
+             }          
+        });
+    </script>
+   
+        <div class="footer-section">
+        
+            <video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video><video width="340" height="240" controls autoplay loop>
+                <source src="167493-837077510_tiny.mp4" type="video/mp4">
+                <source src="caminho/do/video.ogg" type="video/ogg">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </div>
+        <footer>
+            <div id="footer"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer').innerHTML = data;
+                    });
+            </script> 
+                  
+    </footer>
+    </div>
+        
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,89 @@
+
+
+    
+/*.cabecalho {
+    padding: 2% 0% 0% 15%;
+    background-color: #333131;
+}
+
+.cabecalho__menu {
+    margin: 20px;
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__menu__link:hover, 
+.cabecalho__menu__link:visited, 
+.cabecalho__menu__link:active {
+    color: #FFFFFF; 
+}
+
+.cabecalho__menu__link {
+    font-family: "Offside", sans-serif;
+    font-size: 24px;
+}*/
+
+body {
+    margin: 2;
+    padding: 3;
+    font-family: 'Arial', sans-serif;
+    background-color: #333131;
+   /* color: #070707;*/
+   
+}
+
+.container {
+    text-align: center;
+    padding: 0px;
+   /* max-height: 100vh;*/
+    margin: 0px;
+    background-color: #333131;
+   
+
+}
+
+
+
+hr {
+    border-top: 1px solid white;
+   /* border: 1px solid #555;*/
+    width: 60%;
+    margin: 20px auto;
+}
+
+img {
+    width: 200px;
+    
+}
+
+
+.about{
+   
+    height: 75vh;
+}    
+
+
+.about h2 {
+    font-family: 1;
+    font-size: 35px;
+    color: #999;
+    margin-bottom: 5px;
+   
+}
+
+.about p {
+    font-size: 30px;
+    line-height: 1,9;
+    color: #ccc;
+    margin: 0px 100;
+    max-width: 900px;
+    padding: 1%;
+    border: 10ch;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+}
+
+

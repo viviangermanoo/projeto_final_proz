@@ -1,0 +1,168 @@
+body {
+    background-color: #333131;
+    color: #FFFFFF; 
+    margin: 0;
+    font-family: Helvetica; 
+}
+
+/*header {
+    text-align: center;
+    background-color: #2E2E2E; 
+    padding: 40px; 
+    font-family: Helvetica;
+}*/
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    background-color: #2E2E2E;
+}
+
+.cabecalho__menu {
+    margin: 20px;
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__menu__link:hover, 
+.cabecalho__menu__link:visited, 
+.cabecalho__menu__link:active {
+    color: #FFFFFF; 
+}
+
+.cabecalho__menu__link {
+    font-family: "Offside", sans-serif;
+    font-size: 24px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.carousel-caption h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333131;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #FFFFFF; 
+}
+
+h1 {
+    padding: 5px 20px;
+}
+
+h2 {
+    padding: 15px 50px;
+}
+
+nav a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+.container {
+    padding: 20px; 
+}
+
+.image-container {
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    text-align: center;
+}
+
+ul li a {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    font-size: large;
+    font-family: Helvetica;
+    padding: 1px;
+    text-align: center;
+}
+
+main{
+    background-color: #333131;
+    color: #FFFFFF; 
+}
+
+
+/*footer {
+    background-color: #2E2E2E; 
+    color: #FFFFFF; 
+    padding: 10px; 
+    text-align: center; 
+    font-family: Helvetica;
+}*/

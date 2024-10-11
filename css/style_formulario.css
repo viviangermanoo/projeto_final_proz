@@ -1,0 +1,76 @@
+body {
+
+    font-family: "Orbitron", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #333131;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+    height: 0%;
+    
+
+    /*font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;*/
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #333131;
+    padding: 180px;
+    
+    /*border-radius: 5px;*/
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.titulo{
+
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+h1 {
+    font-size: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}

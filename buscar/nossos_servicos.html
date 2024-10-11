@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITRINE VIRTUAL</title>
+    <link rel="stylesheet" href="../css/style_servicos.css">
+    
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <div id="header"></div>
+                <script>
+                    fetch('cabecalho.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                        });
+                </script>
+            </header>
+    <main>
+        <!--<header>-->
+            <div class="image-container">
+            </div>
+            <div class="image-container">
+                <br><br><br>
+                <h1>NOSSOS SERVIÇOS</h1>
+            </div>
+            <h2>A Vitrine Virtual surgiu com a finalidade de intermediar a idealização dos sonhos das empresas e os desejos dos consumidores:</h2>
+            <h3>Oferecemos aos clientes:</h3>    
+        <!--</header>-->
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/img_serviços/devgirl.jpeg" alt="Garota programando no computador">
+                    <div class="carousel-caption">
+                        <h4>Criação de sites e apps</h4>
+                        <p>Desenvolvimento de projetos inovadores e personalizados para você ou sua empresa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/img_serviços/pagvitrine.jpg" alt="marketing">
+                    <div class="carousel-caption">
+                        <h4>Marketing digital</h4>
+                        <p>Estratégias eficazes para seu negócio alcançar excelentes metas e resultados.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/img_serviços/devboy.jpeg" alt="manutenção">
+                    <div class="carousel-caption">
+                        <h4>Manutenção</h4>
+                        <p>Suporte contínuo com nossa equipe técnica para que seu site ou app mantenha a excelência.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="prevBtn" class="carousel-control-prev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.414 6.586a2 2 0 0 0-2.828 0L8 9.586l-4.586-4.586A2 2 0 0 0 1.586 6.586l6 6a2 2 0 0 0 2.828 0l6-6a2 2 0 0 0 0-2.828z" fill="white"/>
+                </svg>
+            </button>
+            <button id="nextBtn" class="carousel-control-next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.586 6.586a2 2 0 0 1 2.828 0L16 9.586l4.586-4.586a2 2 0 0 1 2.828 2.828l-6 6a2 2 0 0 1-2.828 0l-6-6a2 2 0 0 1 0-2.828z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+
+        <section id="home">
+            <br><br><br><br><br><br><br><br><br><br>
+        </section>
+    </main>
+    <script src="../js/servicos.js"></script>  
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script> 
+              
+</footer>
+     
+</body>
+</html>

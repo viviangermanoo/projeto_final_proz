@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="serviços, profissionais, busca">
+    <meta name="description" content="Projeto curso Proz">
+    <meta name="author" content="Kelly Renata">
+    <title> VIRTUAL</title>
+    <script type="text/javascript" src="filtro.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    
+    <style>
+     .titulo-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh; /* Altura total da viewport */
+        width: 100%;
+        overflow: hidden;
+        background-color: #333131;
+        color: #fff;
+        font-size: 50pt;
+        white-space: nowrap;
+        position: relative;
+        padding: 18%;
+    
+}
+    .titulo-carousel p {
+        position: absolute;
+        width: 100%;
+        padding-left: 100%;
+        animation: marquee 8s linear infinite;
+}
+    @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+    #frase2, #frase3 {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container-body">
+        <header>
+            <div id="header"></div>
+                <script>
+                    fetch('cabecalho.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                        });
+                </script>            
+        </header>
+        <div class="carrossel_container">
+            <div class="titulo-carousel">
+                <p id="frase1"><i>PAGINA EM MANUTENÇÃO.</i></p>
+                <p id="frase2">VOLTAREMOS FUNCIONAR, LOGO!</p>
+                <p id="frase3">OBRIGADO!</p>
+            </div>
+        <footer>
+                <div id="footer"></div>
+                <script>
+                    fetch('footer.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('footer').innerHTML = data;
+                        });
+                </script> 
+                      
+        </footer>
+    </body>
+</html>

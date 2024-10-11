@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine Virtual</title>
+    <link rel="stylesheet" href="../css/style_index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-body">
+        <header>
+            <div id="header"></div>
+                <script>
+                    fetch('cabecalho.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('header').innerHTML = data;
+                        });
+                </script>
+               
+            </header>
+
+    <main class="container">
+        <div class="coluna colunae">
+            <div class="menuinfo">
+                <div class="menulateral">
+                    <a href="../profissionais.html"> Encontre um profissional</a> <br>
+                    <a href="../clientes.html"> Serviços realizados</a> <br>
+                    <a href="../em_breve.html"> Cidades</a> <br>
+                    <a href="../em_breve.html"> Região</a> <br>
+                    <a href="../em_breve.html"> Avaliação</a> <br>
+                    </div>
+            </div>
+        </div>
+        <div class="coluna colunad">
+            <H1>PARA VOCÊ VENDER COMO QUISER...</H1>
+
+            <h2>Destaques:</h2>
+
+            <div style="display: flex;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/img_index/enfermeiros.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">ENFERMEIROS</h3>
+                        <p class="card-text">Encontre diversos enfermeiros para as diversas necessidades.</p>
+                        <a href="../em_breve.html" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+            
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/img_index/consultores.jpg" height="190" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">CONSULTORES</h3>
+                        <p class="card-text">Encontre diversos consultores para as diversas necessidades</p>
+                        <a href="../em_breve.html" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+        
+                <div class="card" style="width: 18rem; height: 30rem;">
+                    <img class="card-img-top" src="../img/img_index/professor.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h3 class="card-title">PROFESSORES </h3>
+                        <p class="card-text">Encontre diversos professores particulares para as diversas necessidade.</p>
+                        <a href="../em_breve.html" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+
+
+              </div>
+
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        </script> 
+              
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 8px;
+    border-top: 1px solid white;
+    padding:10px;
+    background-color:#333131;
+    text-align: center;
+   /* margin: -8px;*/
+    display: block;
+    position: initial;
+    left: 100%;
+    width: 100%;
+   /* margin-block-end: -50px;*/
+    align-content: center;
+    justify-content: center;
+}
+
+p{
+    color: #ccc;
+    
+}

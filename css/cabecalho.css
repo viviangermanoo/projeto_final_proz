@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333131;
+   
+    
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #333131;
+    color: #FFFFFF;
+    
+}
+
+.cabecalho__menu {
+    margin: 20px;
+    display: flex;
+    gap: 60px;
+    
+}
+
+.cabecalho__menu__link:hover, 
+.cabecalho__menu__link:visited, 
+.cabecalho__menu__link:active {
+    color: #FFFFFF; 
+}
+
+.cabecalho__menu__link {
+    font-family: "Offside", sans-serif;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    
+}
+
+/*footer {
+        margin-top: 8px;
+        border-top: 1px solid #444;
+        padding: 10px;
+        background-color: #222;
+        text-align: center;
+        margin: -8px;
+        display: block;
+        position: initial;
+        left: 50%;
+        width: 100%;
+        margin-block-end: -50px;
+}
+p{
+    color: #ccc
+       
+
+}*/
