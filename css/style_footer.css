@@ -18,3 +18,12 @@ p{
     color: #ccc;
     
 }
+footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background: #333;
+   color: white;
+   text-align: center;
+   padding: 1rem;
+}
